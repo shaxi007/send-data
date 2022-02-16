@@ -10,4 +10,4 @@ app.post("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(2000, () => console.log("Server started on port 2000"));
+app.listen(process.env.PORT, () => console.log("Server started on port 2000"));
